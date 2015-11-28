@@ -2,9 +2,7 @@
 
 This projects tests the [amp-ad](https://github.com/ampproject/amphtml/blob/master/builtins/amp-ad.md) builtin from the [amphtml](https://github.com/ampproject/amphtml) project.
 
-There are a number of permutations of ad types that need to be tested. The current approach is to pivot on ad formats. For example, when you navigate to the [main page](http://htmlpreview.github.io/?https://github.com/jasti/amp-ads-testing/blob/master/index.html) you'll notice test cases driven by format. For example : [Image Tests](http://htmlpreview.github.io/?https://github.com/jasti/amp-ads-testing/blob/master/image.amp.html). When creating your own test cases, please follow the pattern :
-* Create a test case for a format within it's own page.
-* Follow the naming convention : Ad Network : Format, Permutation
+There are a number of permutations of ad types that need to be tested. The current approach is to split test cases based on the ad network hosting the ads and then pivot on ad formats. For example, when you navigate to the [main page](http://htmlpreview.github.io/?https://github.com/jasti/amp-ads-testing/blob/master/index.html) you'll notice test cases driven by ad network and format. For example : [DFP Image Tests](http://htmlpreview.github.io/?https://github.com/jasti/amp-ads-testing/blob/master/tests/dfp-image.amp.html).
 
 
 ###Running locally
