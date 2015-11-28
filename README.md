@@ -10,7 +10,7 @@ Clone to repo locally.
 * Make sure you have [NodeJS and NPM](https://nodejs.org/en/) installed.
 * Run 'npm install' 
 * Run 'grunt server' : This should spawn on a local express server with live reload configured
-* Open chromium browser and simulate the browser view to a mobile browser size and navigate to [localhost:9000/index.html](http://localhost:9000/index.html)
+* Open the chromium browser (preferably) and simulate the browser view to a mobile browser size and navigate to [localhost:9000/index.html](http://localhost:9000/index.html)
 
 ###Creating a test case
 * Make sure you follow the spreadsheet
