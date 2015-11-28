@@ -7,10 +7,11 @@ There are a number of permutations of ad types that need to be tested. The curre
 
 ###Running locally
 Clone repo locally.
-* Make sure you have [NodeJS and NPM](https://nodejs.org/en/) installed.
+* Make sure you have [NodeJS and NPM](https://nodejs.org/en/) installed. See [this](http://rhumaric.com/2013/07/renewing-the-grunt-livereload-magic/) article for more details.
+
 * Run 'npm install' 
 * Run 'grunt server' : This should spawn on a local express server with live reload configured
-* Open the chromium browser (preferably) and simulate the browser view to a mobile browser size and navigate to [localhost:9000/index.html](http://localhost:9000/index.html)
+* Open the chromium browser (preferably) and simulate the browser view to a mobile browser size and navigate to [localhost:9000/index.html](http://localhost:9000/index.html). Your edits to the local files will automatically reflect to the dev server when the file is saved.
 
 
 ###Gotchas
