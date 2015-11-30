@@ -15,12 +15,16 @@ Clone repo locally.
 
 
 ###Gotchas
+
+Always check the console for error indication if something is not working
+
 * Beware of Doubeclick specific chrome extensions, they seem to mess with Doubleclick specific tags. Instead, use the latest chromium build where you don't have 3rd party extensions installed.
 
 * If you are trafficking a 3rd party AdX tag, make sure the AdX account is linked in DFP, else the 3rd party tag will not return an ad.
 
 * Ads don't seem to be working every single time. Especially AdX ones, it could simply be that no buyer is bidding, but sometimes you'll need to try a bunch of times before getting the ads to show up.
 
+* If requesting 3rd party tags in DFP, make sure all resources being served by the 3rd party tag are over HTTPS. AMP only works with secure content. 
 
 
 
