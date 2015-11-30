@@ -15,7 +15,7 @@ Clone repo locally.
 
 
 ###Gotchas
-* Beware of Doubeclick specific extensions, they seem to mess with Doubleclick specific tags. Instead, use the latest chromium build where you don't have 3rd party plugins installed.
+* Beware of Doubeclick specific chrome extensions, they seem to mess with Doubleclick specific tags. Instead, use the latest chromium build where you don't have 3rd party extensions installed.
 
 * If you are trafficking a 3rd party AdX tag, make sure the AdX account is linked in DFP, else the 3rd party tag will not return an ad.
 
