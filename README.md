@@ -24,7 +24,7 @@ Always check the console for error indication if something is not working
 
 * Ads don't seem to be working every single time. Especially AdX ones, it could simply be that no buyer is bidding, but sometimes you'll need to try a bunch of times before getting the ads to show up.
 
-* If requesting 3rd party tags in DFP, make sure all resources being served by the 3rd party tag are over HTTPS. AMP only works with secure content. 
+* If requesting 3rd party tags in DFP, make sure all resources being served by the 3rd party tag are over HTTPS. AMP only works with secure content.  (Requirements for SSL)
 
 
 
