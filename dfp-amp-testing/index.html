@@ -59,6 +59,12 @@
 		    				<button type="button" class="btn btn-link" data-toggle="modal" data-target="#aboutModal">About</button>
 		    			</li> 
 
+
+		    			<li class="navbar-brand page-scroll">
+		    				<button type="button" class="btn btn-link" data-toggle="modal" data-target="#IntegrationModal">HELP GUIDES</button>
+		    			</li> 
+
+
 		    			<li class="navbar-brand page-scroll">
 		    				<button type="button" class="btn btn-link" data-toggle="modal" data-target="#feedbackModal">FEEDBACK</button>
 		    			</li> 
@@ -98,6 +104,36 @@
 		    	</div>
 		    </div>
 
+		      <!-- About Modal -->
+		    <div class="modal fade" id="IntegrationModal" role="dialog">
+		    	<div class="modal-dialog">
+
+		    		<!-- Modal content-->
+		    		<div class="modal-content">
+		    			<div class="modal-header">
+		    				<button type="button" class="close" data-dismiss="modal">&times;</button>
+		    				<h4 class="modal-title">About</h4>
+		    			</div>
+		    			<div class="modal-body" style="color:#333;">
+							We've written some guides to help with your AMP Ads implementation: 
+						
+		    				<ul style="list-style-type: none;">
+		    				
+		    					<li><u><a href= "http://dfp-amp-testing-1185.appspot.com/dfp-amp-testing/guides.html#techBestPractices">AMP Ads - Technical Best Practices</a></u></li>
+		    					<li><u><a href= "http://dfp-amp-testing-1185.appspot.com/dfp-amp-testing/guides.html#vendorIntegration">AMP Ads - Vendor Integration Status</a></u></li>
+		    					<li><u><a href= "http://dfp-amp-testing-1185.appspot.com/dfp-amp-testing/guides.html#monetizationGuide">AMP Ads - Monetization Best Practices</a></u></li>
+
+		    					<li></li>
+		    				</ul>
+		    			
+		    			</div>
+		    		</div>
+
+		    	</div>
+		    </div>
+
+
+
 		      <!-- Feedback Modal -->
 		    <div class="modal fade" id="feedbackModal" role="dialog">
 		    	<div class="modal-dialog">
@@ -126,7 +162,7 @@
 				<div class="container">
 					 <h2><b>AMP Ads test cases for DFP </b></h2> 
 					 <br>
-						<br>
+			
 						<h4> DFP Ad Formats </h4>
 						<a href ="amp_tests/dfp-image-layouts-fixed.html">Static Image ad (Banner) DFP reservation</a><br>
 						<a href ="amp_tests/dfp-native-fixed.html">DFP Native for Web Ad</a><br>
