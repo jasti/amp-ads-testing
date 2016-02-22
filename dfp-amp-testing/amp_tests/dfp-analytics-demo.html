@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html ⚡ lang="en">
   <head>
@@ -9,17 +10,31 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-    <h2>Static Image ad (Banner) DFP Reservation</h2>
-    <a href="https://github.com/jasti/amp-ads-testing/blob/master/tests/dfp-image-layouts-fixed.html" target="_blank"><b>Source Code</b></a>
-    <br>
-    <center>
-    <amp-ad
+    <h1>DFP-GA integration</h1>
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-50373579-1"  // Replace with your property ID.
+  },
+  "triggers": {
+    "trackPageview": {  // Trigger names can be any string. trackPageview is not a required name.
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+<center>
+   <amp-ad
       width="300"
       height="250"
       layout="fixed"
       type="doubleclick"
       data-slot="/35096353/amptesting/image/static">
     </amp-ad>
-  </center>
+</center>
   </body>
 </html>

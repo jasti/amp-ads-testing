@@ -9,17 +9,26 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-    <h2>Static Image ad (Banner) DFP Reservation</h2>
-    <a href="https://github.com/jasti/amp-ads-testing/blob/master/tests/dfp-image-layouts-fixed.html" target="_blank"><b>Source Code</b></a>
-    <br>
+    <h1>Geo-targeting in DFP</h1>
     <center>
-    <amp-ad
+    <h3>You will see the ad below if you are browsing from the UK</h3> 
+  <amp-ad
       width="300"
       height="250"
-      layout="fixed"
       type="doubleclick"
-      data-slot="/35096353/amptesting/image/static">
+      data-slot="/35096353/amptesting/geo/uk">
     </amp-ad>
-  </center>
+ 
+   <h3>You will see the ad below if you are browsing from the US</h3> 
+   <amp-ad
+      width="300"
+      height="250"
+      type="doubleclick"
+      data-slot="/35096353/amptesting/geo/us">
+    </amp-ad>
+
+   <h3>You won't see either of the ads above if you are not browsing from the US or the UK</h3> 
+
+ </center>
   </body>
 </html>

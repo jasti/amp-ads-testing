@@ -5,21 +5,32 @@
     <title>Ads in AMP</title>
     <link rel="canonical" href="."/>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="amp-3p-iframe-src" content="https://x20web.corp.google.com/~jastiv/remote.html">
     <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-    <h2>Static Image ad (Banner) DFP Reservation</h2>
-    <a href="https://github.com/jasti/amp-ads-testing/blob/master/tests/dfp-image-layouts-fixed.html" target="_blank"><b>Source Code</b></a>
-    <br>
+  
     <center>
-    <amp-ad
+      <h2>DoubleClick: test3p</h2>
+  
+
+     <amp-ad
+      width=300
+      height=250
+      type="doubleclick"
+      data-slot="/35096353/amptesting/test3p">
+    </amp-ad>
+
+        <h2>DoubleClick: native</h2>
+     <amp-ad
       width="300"
       height="250"
       layout="fixed"
       type="doubleclick"
-      data-slot="/35096353/amptesting/image/static">
+      data-slot="/35096353/amptesting/native">
     </amp-ad>
-  </center>
+
+
   </body>
 </html>

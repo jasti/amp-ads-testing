@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<script>
+(function() {
+var v = location.search.substr(1);
+if (!(/^\d+(-canary)?$/.test(v))) return;
+var u = 'https://3p.ampproject.net/'+encodeURIComponent(v)+'/f.js';
+document.write('<script'+' src="'+encodeURI(u)+'"><'+'/script>');
+})();
+</script>
+
+<script>
+
+  /**
+   * Resizes the ad container (iframe) to match the width and height of it's content.
+   * @see {@link https://github.com/ampproject/amphtml/blob/master/ads/README.md#user-content-ad-resizing|ampproject}
+   */
+  var requestResize = function() {
+  	 console.log ('inside requestResize');
+    window.context.requestResize(100, 100);
+  };
+
+
+  /**
+   * Attaches a resize event listener to the window to trigger ad iframe resizing. 
+   * It also uses requestAnimationFrame to throttle the window resize event
+   * from triggering the event handler too often.
+   */
+  (function resizeThrottle() {
+  	 console.log ('inside resizeThrottle');
+    var running = false;
+    var func = function() {
+    	 console.log ('inside func');
+      if (running) return;
+      running = true;
+      requestAnimationFrame(function() {
+        requestResize();
+        running = false;
+      });
+    };
+    window.addEventListener('resize', func);
+  })();
+</script>
+</head>
+<body style="margin:0">
+<div id="c" style="position:absolute;top:0;left:0;bottom:0;right:0;">
+  <script>
+    draw3p(function(config, done) {
+
+	 
+	  console.log ('Inside 3p');
+	    done(config);
+	});
+  </script>
+</div>
+<script>if (window.docEndCallback) window.docEndCallback()</script>
+</body>
+</html>
