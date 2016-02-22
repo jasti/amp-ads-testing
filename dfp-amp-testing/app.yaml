@@ -32,7 +32,7 @@ handlers:
   static_dir: amp_tests
 
 - url: /guides
-  static_dir: amp_tests
+  static_dir: guides
 
 
 - url: /.*
