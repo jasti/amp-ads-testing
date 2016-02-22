@@ -24,12 +24,14 @@ handlers:
 - url: /js
   static_dir: js
 
-
 - url: /css
   static_dir: css
 
 
 - url: /amp_tests
+  static_dir: amp_tests
+
+- url: /guides
   static_dir: amp_tests
 
 
