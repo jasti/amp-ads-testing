@@ -1,45 +1,25 @@
-<html>
+<!doctype html>
+<html ⚡ lang="en">
   <head>
-  <script type='text/javascript'>
-   var googletag = googletag || {};
-   googletag.cmd = googletag.cmd || [];
-   (function() {
-     var gads = document.createElement('script');
-     gads.async = true;
-     gads.type = 'text/javascript';
-     var useSSL = 'https:' == document.location.protocol;
-     gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-     var node = document.getElementsByTagName('script')[0];
-     node.parentNode.insertBefore(gads, node);
-   })();
-   </script>
-<script type='text/javascript'>
- googletag.cmd.push(function() { 
+    <meta charset="utf-8">
 
-       googletag.defineSlot('/30497360/cfuertes/amp-ad-demo', [300,250], 'div-gpt-446105728').addService(googletag.pubads());
-       googletag.pubads().enableAsyncRendering();
-       googletag.pubads().enableSingleRequest();
-       googletag.pubads().addEventListener('slotRenderEnded', function(e) {
-         var el = document.getElementById(e.slot.getSlotElementId());
-         var result = document.createElement('p');
-         result.innerText = 'Returned LI: ' + e.lineItemId + '; Creative ID: ' + e.creativeId;
-         el.parentNode.insertBefore(result, el.nextSibling);
-       });
-       googletag.enableServices(); 
- }); 
- </script>
- <link rel="stylesheet" type="text/css" href="https://commondatastorage.googleapis.com/autotag/tags.css"/>
-<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-</head>
-<body>
-Test page generated for Network: 30497360 LineItem ID: 169664800<br/><br/><!-- ad unit divs go here -->
-   AdUnit: amp-ad-demo Size: 300x250<br/>
-   <div class='advancedOptions' id='div-gpt-446105728' style='width:300px; height:250px;'>
-   <script type='text/javascript'>
-     googletag.cmd.push(function() {
-       googletag.display('div-gpt-446105728');
-     });
-    </script>
-</div>
-<br/><br/></body>
+<meta name="robots" content="noindex">
+    <title>Ads in AMP</title>
+    <link rel="canonical" href="."/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+  
+<amp-ad
+      width="300"
+      height="250"
+      layout="fixed"
+      type="doubleclick"
+      data-slot="/30497360/cfuertes/amp-ad-demo">
+    </amp-ad>
+
+
+</body>
 </html>
