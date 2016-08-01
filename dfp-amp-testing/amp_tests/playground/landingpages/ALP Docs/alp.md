@@ -9,7 +9,8 @@ Clicking on traditional landing pages is not a desirable user experience for the
 	
 3. How the landing page loads is not deterministic. Depending on the operating system and ad server, the landing page could open in a new tab, on the same tab or in a custom tab.
 
-![image alt text](Android_LP.gif)
+<img style="float: right;" src="Android_LP.gif">
+
 
 ### **Solution**
 
@@ -73,7 +74,7 @@ In DFP, when uploading the creative, use the creative type : Custom - this will 
 	
 2. Integration with Google Analytics Conversion trackers *(Expected  to be in GA by End of Q3, 16)*
 
- ### **Reporting an Issue/ Feature Request**
+### **Reporting an Issue/ Feature Request**
 
 Please open a Github Issue/ feature request on the [AMP project repo](https://github.com/ampproject/amphtml/issues) OR contact jastiv@google.com
 
