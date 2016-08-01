@@ -9,8 +9,7 @@ Clicking on traditional landing pages is not a desirable user experience for the
 	
 3. How the landing page loads is not deterministic. Depending on the operating system and ad server, the landing page could open in a new tab, on the same tab or in a custom tab.
 
-<img style="float: right;" src="Android_LP.gif">
-
+![image alt text](Android_LP.gif)
 
 ### **Solution**
 
