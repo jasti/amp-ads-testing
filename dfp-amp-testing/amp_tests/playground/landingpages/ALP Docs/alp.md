@@ -9,7 +9,7 @@ Clicking on traditional landing pages is not a desirable user experience for the
 	
 3. How the landing page loads is not deterministic. Depending on the operating system and ad server, the landing page could open in a new tab, on the same tab or in a custom tab.
 
-![image alt text](Android.gif)
+![image alt text](Android_LP.gif)
 
 ### **Solution**
 
@@ -29,7 +29,7 @@ The benefits of AMP Ad landing pages can be achieved in both scenarios where:
 
 See below for a quick demo on how this work on the Google search viewer. Also note that the viewer provides an easy back button which puts the user back in the reading context.
 
-![image alt text](Google.gif)
+![image alt text](Google_Viewer.gif)
 
 ### **Requirements for ALP system to work :**
 
