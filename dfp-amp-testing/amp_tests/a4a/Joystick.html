@@ -40,6 +40,8 @@
       top: 0; left: 0;
       width: 300px; height: 214px;
       background-color: rgba(33, 13, 13, .2);
+    }
+    .amp-animate .cover {
       opacity: 0;
       -webkit-animation: opacityAni 0.5s linear 0.5s 1 normal forwards;
       -moz-animation: opacityAni 0.5s linear 0.5s 1 normal forwards;
@@ -50,6 +52,8 @@
       top: 45px; left: 0;
       width: 300px; height: 110px;
       background-color: #5b230e;
+    }
+    .amp-animate .message {
       opacity: 0;
       -webkit-animation: opacityAni 0.5s linear 2.5s 1 normal forwards;
       -moz-animation: opacityAni 0.5s linear 2.5s 1 normal forwards;
@@ -65,6 +69,8 @@
       display: block;
       position: absolute;
       top: 2px; right: 8px;
+    }
+    .amp-animate #logo {
       -webkit-transform: translate3d(200px, 0, 0);
       -moz-transform: translate3d(200px, 0, 0);
       transform: translate3d(200px, 0, 0);
@@ -76,6 +82,8 @@
       display: block;
       position: absolute;
       top: 90px; right: 2px;
+    }
+    .amp-animate #product {
       -webkit-transform: translate3d(200px, 0, 0);
       -moz-transform: translate3d(200px, 0, 0);
       transform: translate3d(200px, 0, 0);
@@ -87,6 +95,8 @@
       display: block;
       position: absolute;
       bottom: 3px; left: 34px;
+    }
+    .amp-animate #footer {
       -webkit-transform: translate3d(0, 20px, 0);
       -moz-transform: translate3d(0, 20px, 0);
       transform: translate3d(0, 20px, 0);
@@ -130,7 +140,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
 </head>
-<body>
+<body class="amp-animate">
   <a id="ad" href="%%CLICK_URL_UNESC%%" target="_blank">
     <amp-img id="img1" src="https://joystick.cachefly.net/amp/example/image1.jpg" width=69 height=69></amp-img>
     <amp-img id="img2" src="https://joystick.cachefly.net/amp/example/image2.jpg" width=83 height=67></amp-img>
