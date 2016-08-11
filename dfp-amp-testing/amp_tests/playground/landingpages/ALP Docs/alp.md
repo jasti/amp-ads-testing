@@ -35,7 +35,7 @@ See below for a quick demo on how this work on the Google search viewer. Also no
 
 1. In order to achieve this benefit, publishers need to add a small piece of JavaScript in their creative, like below: 
 
-	<script async src="https://cdn.ampproject.org/alp.js"></script>
+	`<script async src="https://cdn.ampproject.org/alp.js"></script>`
 
 2. The ALP system does not require any changes to click URLs. However, all click destinations must have the AMP cache prefix https://cdn.ampproject.org/c/ and they must be statically recognizable inside the click URL (there cannot be any intermediate redirects).
 
