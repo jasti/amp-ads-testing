@@ -35,7 +35,7 @@ See below for a quick demo on how this work on the Google search viewer. Also no
 
 1. In order to achieve this benefit, publishers need to add a small piece of JavaScript in their creative, like below: 
 
-	<script async src="https://cdn.ampproject.org/alp.js"></script>
+	`<script async src="https://cdn.ampproject.org/alp.js"></script>`
 
 2. The ALP system does not require any changes to click URLs. However, all click destinations must have the AMP cache prefix https://cdn.ampproject.org/c/ and they must be statically recognizable inside the click URL (there cannot be any intermediate redirects).
 
@@ -61,11 +61,16 @@ More than 650K domains already publish AMP pages today and growing everyday. Adv
 
 To learn more about how to convert your regular pages to AMP, please see [tutorial here](https://www.ampproject.org/docs/get_started/create.html). 
 
+###Working Example:
+
+[Here is a working example](http://dfp-amp-testing-1185.appspot.com/amp_tests/amp-alp-demo.html) of the AMP Ad Landing Page - Experience on a mobile device.
+
 ### To serve ads with ALPs in DFP adserver, follow instructions below:
 
 In DFP, when uploading the creative, use the creative type : Custom - this will allow you to plug-in the alp.js script.
 
 ![image alt text](dfp.png)
+
 
 ### **Issues currently being worked on:**
 
