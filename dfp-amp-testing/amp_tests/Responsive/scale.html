@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+ <script>
+//Scale a display ad to the current viewport size using the CSS 'transform' property
+var numScale = 1;
+var banner = document.getElementById("banner");
+var viewportWidth = window.innerWidth;
+var bannerWidth = document.getElementById('banner').offsetWidth;
+//REMOVE THIS VALUE. Offset for displaying on this page
+var pageOffSet = 140;
+bannerWidth = bannerWidth + pageOffSet;
+//Only scale if the viewport width is smaller than the original size
+
+  //viewportWidth < bannerWidth
+//Since we are using a CSS3 property, we need to determine which vendor prefix the current device supports and use that. This solution was found at http://www.javascriptkit.com/javatutors/setcss3properties.shtml
+function getsupportedprop(proparray){
+	var root=document.documentElement //reference root element of document
+ for (var i=0; i<proparray.length; i++){ //loop through possible properties
+   if (proparray[i] in root.style){ //if property exists on element (value will be string, empty string if not set)
+			return proparray[i] //return that string
+		}
+	}
+}
+
+csstransform=getsupportedprop(['transform', 'MozTransform', 'WebkitTransform', 'msTransform', 'OTransform'])
+
+function changecssproperty(target, prop, value){  
+  if (typeof prop!="undefined")
+       target.style[prop]=value
+}
+
+//Calculate the scale amount by dividing the element width by the viewport width and convert the result to a decimal.
+numScale = (viewportWidth/bannerWidth).toFixed(2);
+
+//Update the transform property beased on the vieport width
+changecssproperty(banner, csstransform, 'scale('+ numScale +')')
+//alert(bannerWidth);
+
+
+
+
+
+ </script>
+
+  </head>
+  <body>
+<center>
+<img id= "banner" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ad-MediumRectangle-300x250.jpg" alt="Mountain View" style="width:304px;height:228px;">
+  </center>
+
+
+</body>
+</html>
