@@ -58,7 +58,7 @@
               </ul>
               Additional requirements & information:
                <ul>
-                <li>You must use a fallback div to show alternate content when no ads are returned.  If no ads are returned the ad will <b>not</b> be collapsed because it is above the fold.</li>
+                <li>You must use a <a target="_blank" href="https://www.ampproject.org/docs/guides/responsive/placeholders#fallbacks">fallback</a> div to show alternate content when no ads are returned.  If no ads are returned the ad will <b>not</b> be collapsed because it is above the fold.</li>
                 <li>Although the page options containing the <code><a target="_blank" href="https://developers.google.com/custom-search-ads/docs/reference#query">query</a></code> parameter are passed as a string, you <b>must</b> dynamically change the query to match the actual search query.</li>
               </ul>
             </div>
@@ -70,7 +70,7 @@
 &lt;amp-ad 
   height=200
   type="csa"
-  data-afsh-page-options='{"pubId": "vert-pla-test1-srp", "query": "flowers"}'
+  data-afsh-page-options='{"pubId": "partner-vert-pla-pub-id", "query": "user search query"}'
   data-afsh-adblock-options='{"width": "auto", "height": 200}'&gt;
   &lt;div fallback&gt;Content for when no ads are returned.&lt;/div&gt;
 &lt;/amp-ad&gt; 
@@ -80,7 +80,7 @@
             <div class="col-md-6">
                 <span class="label label-primary">AMP Demo</span>
         <hr></hr>
-  Emulate with a mobile device for best results.<br><br/>
+  <i><b>Note</b>: Emulate with a mobile user agent for accurate rendering.</i><br><br/>
   <iframe id="demo" src="afsh-atf-demo.html" width="400" height="600"></iframe><br><br/>
             
             <div>
