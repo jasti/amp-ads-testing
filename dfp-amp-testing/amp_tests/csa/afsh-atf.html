@@ -1,0 +1,108 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CSA AMP Testing</title>
+
+    <!-- CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/grayscale.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/spinkit.css" rel="stylesheet" type="text/css">
+    <link href="../..//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+    rel="stylesheet" type="text/css">
+    <link href="../..//fonts.googleapis.com/css?family=Montserrat:400,700"
+    rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+            <!-- JS -->
+            <script data-main="js/app" src="../../js/lib/require.js"></script>
+        </head>
+
+        <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <header class="intro">
+      <div class="intro-body">
+    <div class="container-fluid">
+  <div class="col-md-12">
+    <!--panel-->
+    <div class="panel panel-default">
+     <div class="panel-heading"> <b>AdSense For Shopping - Above the Fold</b></div>
+     <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+                <span class="label label-warning">Description</span> <br>
+              <hr></hr>
+             <p class="text-left">This is an example of AdSense for Shopping (AFSh) ads placed above the fold.  See the <a target="_blank" href="https://developers.google.com/adsense-for-shopping/">reference documentation</a> for more information about AFSh.</p>
+             <div class="text-left">
+              AMP ad attributes:
+               <ul>
+                <li><code>type</code> - Must be set to "csa".</li>
+                <li><code>height</code> - Should be set to the same value you used for the <code>height</code> parameter in <code>data-afsh-adblock-options</code>.</li>
+                <li><code>data-afsh-page-options</code> - AFSh page options as a string, in the same way you would specify the options in a normal web request.</li>
+                <li><code>data-afsh-adblock-options</code> - AFSh block options as a string.</li>
+                <ul>
+                  <li>Set the <code><a target="_blank" href="https://developers.google.com/custom-search-ads/docs/reference#width">width</a></code> parameter to <code>"auto"</code> for best results.</li>
+                  <li>No need to set the <code><a target="_blank" href="https://developers.google.com/custom-search-ads/docs/reference#container">container</a></code> parameter.</li>
+                </ul>
+              </ul>
+              Additional requirements & information:
+               <ul>
+                <li>You must use a fallback div to show alternate content when no ads are returned.  If no ads are returned the ad will <b>not</b> be collapsed because it is above the fold.</li>
+                <li>Although the page options containing the <code><a target="_blank" href="https://developers.google.com/custom-search-ads/docs/reference#query">query</a></code> parameter are passed as a string, you <b>must</b> dynamically change the query to match the actual search query.</li>
+              </ul>
+            </div>
+
+              <br> </br>
+              <div class="label label-info">AMP Ad Tag</div>
+              <br> </br>
+              <pre class="text-left" style="font-size:10px">
+&lt;amp-ad 
+  height=200
+  type="csa"
+  data-afsh-page-options='{"pubId": "vert-pla-test1-srp", "query": "flowers"}'
+  data-afsh-adblock-options='{"width": "auto", "height": 200}'&gt;
+  &lt;div fallback&gt;Content for when no ads are returned.&lt;/div&gt;
+&lt;/amp-ad&gt; 
+              </pre>
+              </div>
+
+            <div class="col-md-6">
+                <span class="label label-primary">AMP Demo</span>
+        <hr></hr>
+  Emulate with a mobile device for best results.<br><br/>
+  <iframe id="demo" src="afsh-atf-demo.html" width="400" height="600"></iframe><br><br/>
+            
+            <div>
+              <div class="label label-info" style="margin-right: 30px;">
+               <a target="_blank" href="afsh-atf-demo.html">Click to Open Demo</a>
+              </div>
+              <div class="label label-info">
+               <a target="_blank" href="https://github.com/jasti/amp-ads-testing/blob/master/dfp-amp-testing/amp_tests/csa/afsh-atf-demo.html" target="_blank">Click To See Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+       
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+</header>
+
+
+          
+
+</body>
+</html>

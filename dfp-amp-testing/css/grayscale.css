@@ -130,7 +130,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -386,6 +386,17 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
+.header {
+    margin: 5px;
+    color: #ffffff;
+    font-size: x-large;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+}
 
 /*
 .panel-body {
